@@ -10,4 +10,7 @@ func main() {
 
 	b := 20.45
 	fmt.Println(b)
+
+	c := "hello Nazma!"
+	fmt.Println(c) 
 }
