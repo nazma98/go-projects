@@ -13,4 +13,7 @@ func main() {
 
 	c := "hello Nazma!"
 	fmt.Println(c) 
+
+	const p = 100
+	fmt.Println(p)
 }
