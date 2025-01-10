@@ -3,17 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
+	age := 20
 
-	var a int = 10
-	fmt.Println(a)
-
-	b := 20.45
-	fmt.Println(b)
-
-	c := "hello Nazma!"
-	fmt.Println(c) 
-
-	const p = 100
-	fmt.Println(p)
+	if age > 18 {
+		fmt.Println("You are eligible to marry")
+	} else if age < 18 {
+		fmt.Println("You are not eligible to marry")
+	} else {
+		fmt.Println("Oh! Just a teenager")
+	}
 }
