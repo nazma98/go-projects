@@ -2,35 +2,51 @@ package main
 
 import "fmt"
 
-func printSomething() {
-	fmt.Println("Education must be free & available!")
-}
-
-func sayHello(name string) {
-	fmt.Println("Welcome to Golang course, ", name);
-}
-
-func main() {
-	// print welcome message
+func printWelcomeMessage() {
 	fmt.Println("Welcome to the application")
+}
 
-	// Get user name as input
+func getUserName() string {
 	var name string
 	fmt.Println("Enter your name -- ")
 	fmt.Scanln(&name)
+	return name
+}
 
+func getNumber() (int, int) {
 	var num1 int 
 	var num2 int
 	fmt.Println("Enter first number - ")
 	fmt.Scanln(&num1)
 	fmt.Println("Enter second number - ")
 	fmt.Scanln(&num2)
-	sum := num1 + num2
 
-	// Display results
+	return num1, num2
+}
+
+func greetUser(name string) {
 	fmt.Println("Hello, ", name)
-	fmt.Println("The sum is - ", sum)
+}
 
+func add(num1 int, num2 int) int {
+	return num1 + num2
+}
+
+func printSum(sum int) {
+	fmt.Println("The sum is - ", sum)
+}
+
+func thankYouMessage() {
 	fmt.Println("Thanks for using our applications!")
 	fmt.Println("Goodbye")
+}
+
+func main() {
+	printWelcomeMessage()
+	name := getUserName()
+	num1, num2 := getNumber()
+	sum := add(num1, num2)
+	greetUser(name)
+	printSum(sum)
+	thankYouMessage()
 }
