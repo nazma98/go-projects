@@ -41,6 +41,15 @@ func thankYouMessage() {
 	fmt.Println("Goodbye")
 }
 
+func findLargerNum(num1 int, num2 int) int {
+	max := num1
+
+	if(num2 > num1) {
+		max = num2
+	}
+	return max
+}
+
 func main() {
 	printWelcomeMessage()
 	name := getUserName()
@@ -49,4 +58,6 @@ func main() {
 	greetUser(name)
 	printSum(sum)
 	thankYouMessage()
+	max := findLargerNum(5, 3)
+	fmt.Println("Larger number - ", max)
 }
