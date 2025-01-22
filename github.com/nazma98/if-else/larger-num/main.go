@@ -10,6 +10,11 @@ func getNumbers() (int, int){
 	return num1, num2
 }
 
+func findLargeNumber(num1 int, num2 int) int {
+	max := num1
+	if num2 > max
+}
+
 func main() {
-	getNumbers()
+	num1, num2 := getNumbers()
 }
