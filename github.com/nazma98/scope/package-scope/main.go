@@ -1,9 +1,10 @@
 package main
 
 import "fmt"
+import "example.com/mathlib"
 
 func main() {
 	fmt.Println("Showing custom package")
 
-	mathlib.add(4, 7)
+	mathlib.Add(4, 7)
 }
