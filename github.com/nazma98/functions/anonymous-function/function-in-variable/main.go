@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func sum() {
+	add(2, 4)
+}
+
 func add(a, b int) {
 	fmt.Println(a + b)
 }
