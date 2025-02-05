@@ -12,4 +12,8 @@ func main() {
 	for index, value := range arr {
 		fmt.Printf("Index %d value %d\n", index, value)
 	}
+
+	for _, value := range arr {
+		fmt.Println(value)
+	}
 }
