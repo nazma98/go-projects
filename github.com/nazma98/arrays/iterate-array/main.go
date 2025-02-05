@@ -8,4 +8,8 @@ func main() {
 	for i := 0; i < len(arr); i++ {
 		fmt.Println(arr[i])
 	}
+
+	for index, value := range arr {
+		fmt.Printf("Index %d value %d\n", index, value)
+	}
 }
