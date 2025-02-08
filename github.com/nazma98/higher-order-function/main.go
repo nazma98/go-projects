@@ -10,3 +10,7 @@ func add(p int, q int) {
 	r := p + q
 	fmt.Println(r)
 }
+
+func main() {
+	processOperation(3, 8, add)
+}
