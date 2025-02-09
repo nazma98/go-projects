@@ -12,3 +12,8 @@ func sub(a cint, b int){
 	c := a - b
 	fmt.Println("The subtract is ", c)
 }
+
+func multiplication(a int, b int) {
+	c := a * b
+	fmt.Println("The product is ", c)
+}
