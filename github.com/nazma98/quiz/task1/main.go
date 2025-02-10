@@ -1,25 +1,25 @@
 package main
+
 import "fmt"
 
-
-func add(a, b int){
-    return a+b
+func calculate(a, b int, op func(x, y int) int) int {
+	return op(a, b)
 }
 
-func substract(a, b int){
-    return a-b
+func add(a, b int) int {
+    return a + b
 }
 
-func multiply(a, b int){
-    return a*b
+func subtract(a, b int) int {
+    return a - b
 }
 
+func multiply(a, b int) int {
+    return a * b
+}
 
 func main(){
-    
-    fmt.Println(add(5,5))
-    fmt.Println(substract(5,5))
-    fmt.Println(multiply(5,5))
-    fmt.Println(add(5,5))
-
+	fmt.Println(calculate(6, 4, add))
+	fmt.Println(calculate(12, 7, subtract))
+	fmt.Println(calculate(6, 4, multiply))
 }
