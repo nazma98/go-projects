@@ -1,9 +1,8 @@
 package main
 
 import "fmt"
-import "math/rand"
 
-func rectangleMethods(length, width float64, op func(x, y float64) float64) {
+func rectangleMethods(length, width float64, op func(x, y float64) float64) float64 {
 	return op(length, width)
 }
 
@@ -19,9 +18,9 @@ func main() {
     length := 10.5
     width := 5.2
 
-    area = rectangleMethods(length, width, rectangleArea)
-    perimeter = rectangleMethods(length, width, rectanglePerimeter)
+    area := rectangleMethods(length, width, rectangleArea)
+    perimeter := rectangleMethods(length, width, rectanglePerimeter)
 
     fmt.Println("Rectangle Area:", area)
-    fmt.Println("Rectangle Perimeter:", parimeter)
+    fmt.Println("Rectangle Perimeter:", perimeter)
 }
