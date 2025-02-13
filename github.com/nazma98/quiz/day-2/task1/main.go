@@ -7,9 +7,7 @@ import (
 
 func Sum(x int) int {
     sum := 0
-    for i := 1; i <= x; i++ {
-        sum += i
-    }
+    sum = (x * (x + 1)) / 2
     return sum
 }
 
