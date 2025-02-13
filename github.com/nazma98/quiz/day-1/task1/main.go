@@ -19,7 +19,7 @@ func multiply(a, b int) int {
 }
 
 func main(){
-	fmt.Println(calculate(6, 4, add))
-	fmt.Println(calculate(12, 7, subtract))
-	fmt.Println(calculate(6, 4, multiply))
+		fmt.Println("The sum is ", calculate(6, 4, add))
+		fmt.Println("The subtraction is ",calculate(12, 7, subtract))
+		fmt.Println("The product is ",calculate(6, 4, multiply))
 }
