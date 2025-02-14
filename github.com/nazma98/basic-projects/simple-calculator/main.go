@@ -13,7 +13,12 @@ func getNumbers() (int, int) {
 	return firstNumber, secondNumber
 }
 
+func add(firstNumber, secondNumber int) int {
+	return firstNumber + secondNumber
+}
+
 func main() {
 	firstNumber, secondNumber := getNumbers()
-	fmt.Println(firstNumber," ", secondNumber)
+	sum := add(firstNumber, secondNumber)
+	fmt.Println(sum)
 }
