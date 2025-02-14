@@ -25,6 +25,15 @@ func multiply(firstNumber, secondNumber int) int {
 	return firstNumber * secondNumber
 }
 
+func divide(firstNumber, secondNumber int) int {
+	if secondNumber == 0 {
+		fmt.Println("Can't be divided by zero!")
+		getNumbers()
+	} else {
+		return firstNumber / secondNumber
+	}
+}
+
 func main() {
 	firstNumber, secondNumber := getNumbers()
 	sum := add(firstNumber, secondNumber)
