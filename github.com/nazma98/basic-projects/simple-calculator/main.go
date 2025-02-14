@@ -21,6 +21,10 @@ func subtract(firstNumber, secondNumber int) int {
 	return firstNumber - secondNumber
 }
 
+func multiply(firstNumber, secondNumber int) int {
+	return firstNumber * secondNumber
+}
+
 func main() {
 	firstNumber, secondNumber := getNumbers()
 	sum := add(firstNumber, secondNumber)
