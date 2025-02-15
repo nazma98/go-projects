@@ -9,6 +9,10 @@ func getNumber() int {
 	return startNumber
 }
 
+func getIncrementValue() int {
+	
+}
+
 func main() {
 	startNumber := getNumber()
 }
