@@ -23,8 +23,17 @@ func getNumberOfTimes() int {
 	return noOfTimes
 }
 
+func increaseNumber(startNumber, increment, noOfTimes int) int {
+	for i := 1; i <= noOfTimes; i++ {
+		startNumber = startNumber + increment
+	}
+	return startNumber
+}
+
 func main() {
 	startNumber := getNumber()
 	increment := getIncrementValue()
 	noOfTimes := getNumberOfTimes()
+	result := increaseNumber(startNumber, increment, noOfTimes)
+	fmt.Println(result)
 }
