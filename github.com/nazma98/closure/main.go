@@ -22,3 +22,7 @@ func outer() func() {
 func main() {
 
 }
+
+func init() {
+	fmt.Println("===Bank===")
+}
