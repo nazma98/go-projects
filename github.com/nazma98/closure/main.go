@@ -19,6 +19,16 @@ func outer() func() {
 	return show
 }
 
+func call() {
+	incr1 := outer()
+	incr1()
+	incr1()
+
+	incr2 := outer()
+	incr2()
+	incr2()
+}
+
 func main() {
 
 }
