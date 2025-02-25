@@ -30,7 +30,7 @@ func call() {
 }
 
 func main() {
-
+call()
 }
 
 func init() {
