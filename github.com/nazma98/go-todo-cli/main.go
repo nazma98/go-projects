@@ -5,6 +5,12 @@ import (
 	// "os"
 )
 
+type task struct{
+	ID int
+	Description string
+	Status bool
+}
+
 func main(){
 	fmt.Println("Welcome to TODO app!")
 	fmt.Println("1. Add Task")
