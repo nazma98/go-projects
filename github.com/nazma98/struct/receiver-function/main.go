@@ -8,6 +8,11 @@ type Student struct{
 	Class string
 }
 
+func (std Student) printDetails() {
+	fmt.Println("Name : ", std.Name)
+	fmt.Println("Class : ", std.Class)
+}
+
 func main() {
-	
+
 }
