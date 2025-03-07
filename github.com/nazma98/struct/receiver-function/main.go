@@ -14,5 +14,13 @@ func (std Student) printDetails() {
 }
 
 func main() {
+	var student1 Student
 
+	student1 = Student{
+		ID: 12,
+		Name: "Shimul",
+		Class: "Six",
+	}
+
+	student1.printDetails()
 }
