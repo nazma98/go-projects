@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+type User struct{
+	Name string
+	Age int
+	Salary float64
+}
+
 func print(numbers *[3]int) {
 	fmt.Println(numbers)
 }
