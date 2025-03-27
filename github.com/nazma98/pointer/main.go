@@ -22,4 +22,12 @@ func main() {
 
 	arr := [3]int{1, 3, 5}
 	print(&arr)
+
+	obj := User{
+		Name: "Shimul",
+		Age: 13,
+		Salary: 0,
+	}
+
+	fmt.Println(obj)
 }
