@@ -9,4 +9,7 @@ func main() {
 	s := arr[1:4]
 	fmt.Println(s)
 	fmt.Println(len(s), " ", cap(s))
+
+	s1 := s[1:2]
+	fmt.Println("Slice :",s1, " Len: ", len(s1), " cap: ", cap(s1))
 }
