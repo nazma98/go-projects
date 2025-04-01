@@ -15,4 +15,10 @@ func main() {
 
 	s2 := []string{"I", "am", "learning", "Go"}
 	fmt.Println("Slice :",s2, " Len: ", len(s2), " cap: ", cap(s2))
+
+	s3 := make([]int, 3, 5)
+	s3[0] = 5
+	s3[2] = 10
+	fmt.Println(s3)
+	fmt.Println("slice ", s3, "len ", len(s3), "cap ", cap(s3))
 }
