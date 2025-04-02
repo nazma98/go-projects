@@ -21,4 +21,8 @@ func main() {
 	s3[2] = 10
 	fmt.Println(s3)
 	fmt.Println("slice ", s3, "len ", len(s3), "cap ", cap(s3))
+
+	var s4 []int
+	s4 = append(s4, 1, 2, 3)
+	fmt.Println(s4)
 }
