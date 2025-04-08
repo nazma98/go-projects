@@ -8,8 +8,13 @@ func main() {
 	x = append(x, 2)
 	x = append(x, 3)
 
+	fmt.Println(x)
+
 	y := x
+
 	x = append(x, 4)
+	fmt.Println(x)
+	fmt.Println(y)
 	y = append(y, 5)
 
 	x[0] = 10
