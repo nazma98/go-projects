@@ -20,4 +20,6 @@ func main() {
 	fmt.Println(x)
 	fmt.Println(a)
 	fmt.Println(y)
+
+	fmt.Println(x[0:8])
 }
