@@ -3,12 +3,14 @@ package main
 import (
 	 "fmt"
 	 "os"
+	 "path/filepath"
 )
 
 func main() {
 	fmt.Println("📁 Folder Organizer Starting...")
+	fmt.Println("")
 
-	f, err := os.Open("/home/nazma/Documents/go-projects/github.com/nazma98/basic-projects/folder-organizer")
+	f, err := os.Open("/home/nazma/Documents/go-projects/github.com/nazma98/basic-projects/folder-organizer/sample-testing")
     if err != nil {
         fmt.Println(err)
         return
@@ -20,9 +22,13 @@ func main() {
     }
 
     for _, v := range files {
-        fmt.Println(v.Name(), v.IsDir())
+		if !v.IsDir() {
+			ext := filepath.Ext(v.Name())
+			fmt.Println(v.Name(), ext)
+		}
     }
 
-	fmt.Println("Closing the directory 📁")
+	fmt.Println("")
+	fmt.Println("🛑 Closing the directory 📁")
 	defer f.Close()
 }
