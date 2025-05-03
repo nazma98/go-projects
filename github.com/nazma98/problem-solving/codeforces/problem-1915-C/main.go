@@ -41,22 +41,27 @@ func readInts(n int) []int {
 	return nums
 }
 
-func canSquare(nums []int) bool {
-
+func canSquare(nums []int) string {
+	sum := 0
+	for _, val := range nums {
+		sum = sum + val
+	}
+	sqr := math.Sqrt(float64(sum))
+	sqrtInt := int(sqr)
+	if sqrtInt*sqrtInt == sum {
+		return "yes"
+	}
+	return "no"
 }
 
 func main() {
 	defer writer.Flush()
 
 	t := readInt()
-	sum := 0
 	for i := 0; i < t; i++ {
 		n := readInt()
 		arr := readInts(n)
-		for _, val := range arr {
-			sum = sum + val
-		}
+		res := canSquare(arr)
+		fmt.Fprintf(writer, "%s\n", res)
 	}
-	sqr := math.Sqrt(sum)
-	fmt.Fprintf(writer, "Square %d\n", sqr)
 }
