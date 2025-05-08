@@ -29,5 +29,5 @@ func main() {
 		Salary: 0,
 	}
 
-	fmt.Println(obj)
+	fmt.Println(obj.Name)
 }
