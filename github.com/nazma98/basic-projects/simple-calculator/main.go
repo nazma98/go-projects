@@ -36,6 +36,6 @@ func divide(firstNumber, secondNumber int) int {
 
 func main() {
 	firstNumber, secondNumber := getNumbers()
-	sum := add(firstNumber, secondNumber)
+	sum := divide(firstNumber, secondNumber)
 	fmt.Println(sum)
 }
