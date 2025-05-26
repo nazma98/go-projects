@@ -19,6 +19,10 @@ func main() {
 	fmt.Printf("%c\n", heart)
 	fmt.Printf("%f\n", j)
 	fmt.Printf("%.2f\n", k)
+	fmt.Printf("%v\n", flag)
+
+	// check type of a variable
+	fmt.Printf("%T\n", heart)
 
 	fmt.Println(a, b, x, j, k, flag)
 }
