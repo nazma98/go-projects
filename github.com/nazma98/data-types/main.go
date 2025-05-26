@@ -16,7 +16,9 @@ func main() {
 
 	heart := '♠'
 
-	fmt.Printf("%c", heart)
+	fmt.Printf("%c\n", heart)
+	fmt.Printf("%f\n", j)
+	fmt.Printf("%.2f\n", k)
 
 	fmt.Println(a, b, x, j, k, flag)
 }
