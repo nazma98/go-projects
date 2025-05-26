@@ -11,5 +11,8 @@ func main() {
 	var j float32 = 10.2423
 	var k float64 = 10.4213
 
-	fmt.Println(a, b, x, j, k)
+	// bool is stored as 1 byte / 8 bit
+	var flag bool = false
+
+	fmt.Println(a, b, x, j, k, flag)
 }
