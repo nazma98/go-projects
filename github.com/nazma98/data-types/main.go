@@ -8,5 +8,7 @@ func main() {
 
 	var x uint8 = 255
 
-	fmt.Println(a, b, x)
+	var j float32 = 10.2423
+
+	fmt.Println(a, b, x, j)
 }
