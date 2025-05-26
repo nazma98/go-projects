@@ -14,5 +14,9 @@ func main() {
 	// bool is stored as 1 byte / 8 bit
 	var flag bool = false
 
+	heart := '♠'
+
+	fmt.Printf("%c", heart)
+
 	fmt.Println(a, b, x, j, k, flag)
 }
