@@ -13,6 +13,8 @@ func a() {
 
 	fmt.Println("third", i)
 
+	defer fmt.Println("fourth", i)
+
 	return
 }
 
