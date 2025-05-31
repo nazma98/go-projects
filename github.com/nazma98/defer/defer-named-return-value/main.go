@@ -17,3 +17,20 @@ func calculate() (result int) {
 
 	return
 }
+
+func calc() int {
+	result := 0
+	fmt.Println("first", result)
+
+	show := func() {
+		result := result + 10
+		fmt.Println("defer", result)
+	}
+
+	defer show()
+
+	result = 5
+	fmt.Println("second", result)
+
+	return result
+}
