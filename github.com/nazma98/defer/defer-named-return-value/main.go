@@ -34,3 +34,11 @@ func calc() int {
 
 	return result
 }
+
+func main() {
+	a := calculate()
+	fmt.Println("main ", a)
+
+	b := calc()
+	fmt.Println("second ", b)
+}
