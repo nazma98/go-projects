@@ -14,3 +14,9 @@ func DeleteStudent(id int) {
 		}
 	}
 }
+
+func PrintAllStudents() {
+	for _, val := range Students {
+		val.DisplayInfo()
+	}
+}
