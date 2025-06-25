@@ -37,8 +37,8 @@ func calc() int {
 
 func main() {
 	a := calculate()
-	fmt.Println("main ", a)
+	fmt.Println("main first", a)
 
 	b := calc()
-	fmt.Println("second ", b)
+	fmt.Println("main second ", b)
 }
