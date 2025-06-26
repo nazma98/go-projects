@@ -15,6 +15,15 @@ func DeleteStudent(id int) {
 	}
 }
 
+func FindStudentByID(id int) *Student {
+	for index := range Students {
+		if id == Students[index].ID {
+			return &Students[index]
+		}
+	}
+	return nil
+}
+
 func PrintAllStudents() {
 	for _, val := range Students {
 		val.DisplayInfo()
