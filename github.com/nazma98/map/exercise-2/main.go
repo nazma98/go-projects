@@ -7,5 +7,6 @@ func main() {
 
 	myMap["Apples"] = 5
 	myMap["Bananas"] = 7
+
 	fmt.Println(myMap)
 }
