@@ -10,4 +10,7 @@ func main() {
 
 	ages["Charlie"] = 34
 	fmt.Println(ages)
+
+	delete(ages, "Bob")
+	fmt.Println(ages)
 }
