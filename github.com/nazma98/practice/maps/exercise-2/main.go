@@ -13,4 +13,11 @@ func main() {
 
 	delete(ages, "Bob")
 	fmt.Println(ages)
+
+	val, ok := ages["Bob"]
+	if ok {
+		fmt.Println("Bob Exists", val)
+	} else {
+		fmt.Println("Bob doesn't exist")
+	}
 }
